@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo Menu Drop Down</title>
+    <title>Munu Principal</title>
 
     <style type="text/css">
         ul{
@@ -11,7 +11,7 @@
             margin: 0px;
             padding: 0px;
             overflow: hidden;
-            background-color: black;
+            background-color: skyblue;
         }
 
         li{
@@ -26,25 +26,25 @@
             text-decoration: none;
         }
 
-        li a:hover, .dropdow:hover .dropbtn{
-            background-color: red;            
+        li a:hover, .dropdown:hover .dropbtn{
+            background-color: darkblue;          
         }
 
-        li.dropdow{
+        li.dropdown{
             display: inline-block;
         }
 
-        .dropdow-content{
+        .dropdown-content{
             display: none;
             position: absolute;
-            background-color: yellow;
+            background-color: burlywood;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
         }
 
-        .dropdow-content a{
-            color: black;
+        .dropdown-content a{
+            color: lightblue;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -52,10 +52,10 @@
         }
 
         .dropdown-content a:hover{
-            background-color: pink;
+            background-color: bisque;
         }
 
-        .dropdown:hover .dropdow-content{
+        .dropdown:hover .dropdown-content{
             display: block;
         }
     </style>
@@ -63,13 +63,12 @@
 <body>
     <ul>
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Novidade</a></li>
         <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">DropDown</a>
-            <div class="dropdow-content">
-                <a href="#">Link1</a>
-                <a href="#">Link2</a> 
-                <a href="#">Link3</a>    
+            <a href="javascript:void(0)" class="dropbtn">Cadastrar</a>
+            <div class="dropdown-content">
+                <a href="Formulario_FuncionariosSA.html">Funcionarios</a>
+                <a href="#">Produto(Propriedade do Vinicius)</a> 
+                <a href="#">Fornecedor(Propriedade Do Matheus de Campos)</a>    
             </div>            
         </li>
     </ul>
