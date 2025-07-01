@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Arial Narrow'
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px auto 50px;
+    grid-template-areas:
+        "cabecalho cabecalho"
+        "menu conteudo"
+        "rodape rodape";
+    height: 100vh;
+}
+
+/* Áreas com cores conforme a imagem */
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: yellow;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+
+.menu {
+    grid-area: menu;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.conteudo {
+    grid-area: conteudo;
+    background-color: lightsalmon;
+    padding: 10px;
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+}
