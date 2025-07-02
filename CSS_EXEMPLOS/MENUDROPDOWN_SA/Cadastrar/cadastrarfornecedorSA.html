@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS_EXRTERNO.css" media="all">
+    <title>Tabela Funcionarios</title>
+
+    <style type="text/css">
+        ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: rgb(160, 106, 5);
+        }
+
+        li{
+            float:left;
+        }
+
+        li a, .dropbtn{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn{
+            background-color: rgb(112, 99, 24);          
+        }
+
+        li.dropdown{
+            display: inline-block;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: rgb(99, 75, 44);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a{
+            color:rgb(170, 142, 89);
+            padding: 15px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover{
+            background-color: bisque;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    </style>
+</head>
+<body >
+    
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Cadastrar</a>
+            <div class="dropdown-content">
+                <a href="Cadastrar/Formulario_FuncionariosSA.html">Funcionarios</a>
+                <a href="Cadastrar/cadastrarfornecedorSA.html">Produto</a> 
+                <a href="Cadastrar/CadastrarAutor.html">Autor(sem finalidade por enquanto)</a>
+                <li class="dropdown">
+                    
+                </li>        
+            
+            
+            </div>            
+        </li>
+    </ul>
+
+</head>
+    
+
+<body >
+    <center>
+            <table >
+                <tr>
+                   <td rowspan=2> <center><img src="logo.ico" height="100" width="100"> </center></td>
+                   <td style="color: rgb(0, 0, 0);"> <center> Cadastrar </center></td>
+        
+                </tr>
+                <tr>
+                    <td style="color: rgb(0, 0, 0);"><center> Livro  </center></td>
+                </tr>
+                <td colspan=2></td>
+
+                <tr>
+                    <td style="color: rgb(0, 0, 0);"><center> Nome </center></td>
+                    <td> <input type="text" id="id_livro" /></td>
+                </tr>
+        
+                <tr>
+                    <td style="color: rgb(0, 0, 0);"><center> Categoria </center></td>
+                    <td> <input type="text" id="produto_categoria" /> </td>
+                </tr>
+                <tr>
+                    <td style="color: rgb(0, 0, 0);"><center> Descrição </center></td>
+                    <td> <input type="text" id="produto_descricao" /></td>
+                </tr>
+
+                <tr>
+                    <td style="color: rgb(0, 0, 0);"><center> Editoria </center></td>
+                    <td> <input type="text" id="produto_editoria" /></td>
+                </tr>
+                
+                    
+                    <td> <input type="submit" value="Registrar Produto" /></td>
+                </tr>
+            
+        </table>
+    </center>
+        <br/>
+</body>
+</html>

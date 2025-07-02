@@ -11,7 +11,7 @@
             margin: 0px;
             padding: 0px;
             overflow: hidden;
-            background-color: skyblue;
+            background-color: rgb(160, 106, 5);
         }
 
         li{
@@ -20,14 +20,15 @@
 
         li a, .dropbtn{
             display: inline-block;
-            color: white;
+            color: white
+            ;
             text-align: center;
-            padding: 14px 16px;
+            padding: 14px 14px;
             text-decoration: none;
         }
 
         li a:hover, .dropdown:hover .dropbtn{
-            background-color: darkblue;          
+            background-color: rgb(112, 99, 24);          
         }
 
         li.dropdown{
@@ -37,14 +38,14 @@
         .dropdown-content{
             display: none;
             position: absolute;
-            background-color: burlywood;
+            background-color: rgb(99, 75, 44);
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
         }
 
         .dropdown-content a{
-            color: lightblue;
+            color: rgb(170, 142, 89);
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -66,13 +67,30 @@
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Cadastrar</a>
             <div class="dropdown-content">
-                <a href="Formulario_FuncionariosSA.html">Funcionarios</a>
-                <a href="#">Produto(Propriedade do Vinicius)</a> 
-                <a href="#">Fornecedor(Propriedade Do Matheus de Campos)</a>    
+                <a href="Cadastrar/Formulario_FuncionariosSA.html">Funcionarios</a>
+                <a href="Cadastrar/cadastrarfornecedorSA.html">Produto</a> 
+                <a href="Cadastrar/CadastrarAutor.html">Autor(sem finalidade por enquanto)</a>         
+                <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Excluir </a>
+                <div class="dropdown-content"> 
+                    <a href="Excluir/Excluirproduto.html"> Produto </a>  
+                    <a href="Excluir/ExcluirFuncionario.html"> Funcionario </a> 
+                    <a href="Excluir/ExcluirAutor.html"> Autor </a> 
+                    <li class="dropdown"></li>                    
+                </div>
+                <li class="dropdown"> 
+                    <a href="javascript:void(0)" class="dropbtn">Alterar </a>
+                    <div class="dropdown-content"> 
+                    <a href="Alterar/alterarProduto.html"> Produto </a>  
+                    <a href="Alterar/alterarFuncionario.html"> Funcionario </a> 
+                    <a href="Alterar/alterarAutor.html"> Autor </a>  
+                </li> 
+            
+            
             </div>            
         </li>
     </ul>
-    <h3>Menu do Tipo DropDown</h3>
+    <h2>Menu do Tipo DropDown</h2>
     <p>Passe o mause atraves dos MENUS</p>    
 </body>
 </html>
