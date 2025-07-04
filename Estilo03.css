@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .titulo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .autor {
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .poema {
+    color: blue;
+    font-size: 18px;
+    text-align: left;
+    white-space: pre-line;
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .imagem {
+    display: inline-block;
+    vertical-align: right;
+  }
+
+  .imagem img {
+    max-width: 500px;
+    height: auto;
+  }
